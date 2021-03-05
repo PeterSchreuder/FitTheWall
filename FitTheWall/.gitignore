@@ -13,8 +13,11 @@
 /Avatar/
 /VRM/
 
+
 # For the big Resnet34 file
 *.onnx
+
+
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -27,6 +30,7 @@
 
 # Visual Studio cache directory
 .vs/
+.idea/
 
 # Gradle cache directory
 .gradle/
