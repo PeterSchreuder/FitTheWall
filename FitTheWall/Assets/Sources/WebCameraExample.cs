@@ -17,11 +17,15 @@ public class WebCameraExample : MonoBehaviour {
     //TFSession.Runner runner;
     TFGraph graph;
     bool isPosing;
+    Texture2D panelTexture;
 
     // Use this for initialization
-    void Start () {
+    void Start() {
         WebCamDevice[] devices = WebCamTexture.devices;
         webcamTexture = new WebCamTexture(devices[0].name, Width, Height, FPS);
+
+        webcamTexture.requestedFPS = 60;
+
         GetComponent<Renderer>().material.mainTexture = webcamTexture;
         webcamTexture.Play();
 
@@ -31,23 +35,24 @@ public class WebCameraExample : MonoBehaviour {
         session = new TFSession(graph);
         
         gl = GameObject.Find("GLRender").GetComponent<GLRenderer>();
-
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update() {
+        UpdatePanelTexture();
+    }
+
+    void UpdatePanelTexture() {
         var color32 = webcamTexture.GetPixels32();
 
-        Texture2D texture = new Texture2D(webcamTexture.width, webcamTexture.height);
+        panelTexture = new Texture2D(webcamTexture.width, webcamTexture.height);
 
-        texture.SetPixels32(color32);
-        texture.Apply();
+        panelTexture.SetPixels32(color32);
+        panelTexture.Apply();
 
         if (isPosing) return;
         isPosing = true;
-        StartCoroutine("PoseUpdate", texture);
-        texture = null;
-
+        StartCoroutine("PoseUpdate", panelTexture);
     }
 
     IEnumerator PoseUpdate(Texture2D texture)
