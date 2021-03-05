@@ -52,7 +52,7 @@ public class MobileCam : MonoBehaviour
 		fit.aspectRatio = ratio; // Set the aspect ratio
 
 		float scaleY = cameraTexture.videoVerticallyMirrored ? -1f : 1f; // Find if the camera is mirrored or not
-		background.rectTransform.localScale = new Vector3(1f, scaleY, 1f); // Swap the mirrored camera
+		background.rectTransform.localScale = new Vector3(-1f, scaleY, 1f); // Swap the mirrored camera
 
 		int orient = -cameraTexture.videoRotationAngle;
 		background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
