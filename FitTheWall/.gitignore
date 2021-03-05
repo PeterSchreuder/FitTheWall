@@ -11,6 +11,7 @@
 /[Uu]ser[Ss]ettings/
 /[Mm]emoryCaptures/
 /Avatar/
+/VRM/
 
 # For the big Resnet34 file
 *.onnx
