@@ -8,7 +8,9 @@
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
+/[Uu]ser[Ss]ettings/
 /[Mm]emoryCaptures/
+/Avatar/
 
 # For the big Resnet34 file
 *.onnx
