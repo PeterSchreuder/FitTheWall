@@ -10,8 +10,8 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 /[Mm]emoryCaptures/
-/Avatar/
-/VRM/
+/Assets/ThreeDPoseUnityBarracuda/Avatar/
+/Assets/ThreeDPoseUnityBarracuda/VRM/
 
 
 # For the big Resnet34 file
