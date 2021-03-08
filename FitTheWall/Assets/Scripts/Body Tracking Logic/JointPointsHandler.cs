@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JointPointHandler : MonoBehaviour
+public class JointPointsHandler : MonoBehaviour
 {
     [SerializeField]
     private List<JointPoint> jointPoints = new List<JointPoint>();
@@ -30,6 +30,11 @@ public class JointPointHandler : MonoBehaviour
         jointPoints = new List<JointPoint>(_jointPointsArray);
     }
 
+    /// <summary>
+    /// Gets a JointPoint from the jointPoints list via the given type
+    /// </summary>
+    /// <param name="_type">PointType What kind of JointPoint it needs to return</param>
+    /// <returns>JointPoint</returns>
     public JointPoint GetJointPointByType(PointType _type)
     {
         JointPoint _jointPoint = null;
