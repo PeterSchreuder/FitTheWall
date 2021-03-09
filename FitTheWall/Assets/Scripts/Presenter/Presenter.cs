@@ -37,7 +37,7 @@ namespace Presenter
         private void OnGameEventDispatched(GameEvent gameEvent)
         {
             DisplayMessageByGameEvent(gameEvent);
-            // DisplayPresenterAnimationByGameEvent(gameEvent);
+            DisplayPresenterAnimationByGameEvent(gameEvent);
         }
         
         /// <summary>

@@ -1,55 +1,43 @@
 fileFormatVersion: 2
-guid: 5cb30401a05c8e647b202defc3e17edb
+guid: ea62cfda0def6ee4ebc5a4e66b6f166a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2381616168188640047
-    second: IdleSpritesheet_0
+      213: 276970942016260070
+    second: presenter_celebrate_sprite_sheet_0
   - first:
-      213: -8515607410003695160
-    second: IdleSpritesheet_1
+      213: -7161738649366562407
+    second: presenter_celebrate_sprite_sheet_1
   - first:
-      213: -2869459990600073977
-    second: IdleSpritesheet_2
+      213: -6239158629478287587
+    second: presenter_celebrate_sprite_sheet_2
   - first:
-      213: -4809845418000111555
-    second: IdleSpritesheet_3
+      213: -4996342978996069751
+    second: presenter_celebrate_sprite_sheet_3
   - first:
-      213: 2755271423231591625
-    second: IdleSpritesheet_4
+      213: 6258150331060675605
+    second: presenter_celebrate_sprite_sheet_4
   - first:
-      213: -2062380762986042333
-    second: IdleSpritesheet_5
+      213: 7396494847025575284
+    second: presenter_celebrate_sprite_sheet_5
   - first:
-      213: 8911533738577307421
-    second: IdleSpritesheet_6
+      213: 8953670796955343921
+    second: presenter_celebrate_sprite_sheet_6
   - first:
-      213: -6033272299148771431
-    second: IdleSpritesheet_7
+      213: -2629612564328426513
+    second: presenter_celebrate_sprite_sheet_7
   - first:
-      213: 184509271508132499
-    second: idle_spritesheet_0
+      213: 3965721842022705036
+    second: presenter_celebrate_sprite_sheet_8
   - first:
-      213: -963246791371173594
-    second: idle_spritesheet_1
+      213: 5233004076931654582
+    second: presenter_celebrate_sprite_sheet_9
   - first:
-      213: -6216102738368683946
-    second: idle_spritesheet_2
+      213: 2130846286595314648
+    second: presenter_celebrate_sprite_sheet_10
   - first:
-      213: 1875201663349578254
-    second: idle_spritesheet_3
-  - first:
-      213: -7884478899600137425
-    second: idle_spritesheet_4
-  - first:
-      213: 8095801490465326343
-    second: idle_spritesheet_5
-  - first:
-      213: -3940989541337913716
-    second: idle_spritesheet_6
-  - first:
-      213: 7917884778432119030
-    second: idle_spritesheet_7
+      213: 1490307504087754906
+    second: presenter_celebrate_sprite_sheet_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,7 +127,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_spritesheet_0
+      name: presenter_celebrate_sprite_sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -153,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 392220274328f8200800000000000000
-      internalID: 184509271508132499
+      spriteID: 6e70cf3ba9ff7d300800000000000000
+      internalID: 276970942016260070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_spritesheet_1
+      name: presenter_celebrate_sprite_sheet_1
       rect:
         serializedVersion: 2
         x: 512
@@ -174,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6215941952cd1a2f0800000000000000
-      internalID: -963246791371173594
+      spriteID: 999f15694a46c9c90800000000000000
+      internalID: -7161738649366562407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_spritesheet_2
+      name: presenter_celebrate_sprite_sheet_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -195,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 650a3386e77fbb9a0800000000000000
-      internalID: -6216102738368683946
+      spriteID: d1732a0784e0a69a0800000000000000
+      internalID: -6239158629478287587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_spritesheet_3
+      name: presenter_celebrate_sprite_sheet_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -216,14 +204,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0a5c224afd060a10800000000000000
-      internalID: 1875201663349578254
+      spriteID: 98a1ce8488c69aab0800000000000000
+      internalID: -4996342978996069751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_spritesheet_4
+      name: presenter_celebrate_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5146dd9a19a69d650800000000000000
+      internalID: 6258150331060675605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presenter_celebrate_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47577f300e0a5a660800000000000000
+      internalID: 7396494847025575284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presenter_celebrate_sprite_sheet_6
       rect:
         serializedVersion: 2
         x: 0
@@ -237,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f23654ee634b49290800000000000000
-      internalID: -7884478899600137425
+      spriteID: 13cdf48b624d14c70800000000000000
+      internalID: 8953670796955343921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_spritesheet_5
+      name: presenter_celebrate_sprite_sheet_7
       rect:
         serializedVersion: 2
         x: 512
@@ -258,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 705834bef801a5070800000000000000
-      internalID: 8095801490465326343
+      spriteID: fe3dc461e4db18bd0800000000000000
+      internalID: -2629612564328426513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_spritesheet_6
+      name: presenter_celebrate_sprite_sheet_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -279,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c86260574eace49c0800000000000000
-      internalID: -3940989541337913716
+      spriteID: c8765c70103190730800000000000000
+      internalID: 3965721842022705036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_spritesheet_7
+      name: presenter_celebrate_sprite_sheet_9
       rect:
         serializedVersion: 2
         x: 1536
@@ -300,8 +330,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f04be6514af1ed60800000000000000
-      internalID: 7917884778432119030
+      spriteID: 6b3aea97b7d5f9840800000000000000
+      internalID: 5233004076931654582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presenter_celebrate_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3597f6869429d10800000000000000
+      internalID: 2130846286595314648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presenter_celebrate_sprite_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98ef3b67c2aea410800000000000000
+      internalID: 1490307504087754906
       vertices: []
       indices: 
       edges: []
@@ -309,7 +381,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7270a80e0d468d442a47427b6e2bcac6
+    spriteID: b85d1508292731a48bab81d7c8b4663d
     internalID: 0
     vertices: []
     indices: 
