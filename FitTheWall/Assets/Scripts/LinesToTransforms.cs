@@ -31,8 +31,6 @@ public class LinesToTransforms : MonoBehaviour
 
             lines.Add(_line);
         }
-
-        print(transforms.Count);
     }
 
     // Update is called once per frame
