@@ -17,7 +17,7 @@ public enum PositionIndex : int
     lForearmBend,
     lHand,
     lThumb2,
-    lMid1,
+    lMid1, 
 
     lEar,
     lEye,
@@ -272,7 +272,7 @@ public class VNectModel : MonoBehaviour
         }
         var hip = jointPoints[PositionIndex.hip.Int()];
         initPosition = jointPoints[PositionIndex.hip.Int()].Transform.position;
-        hip.Inverse = Quaternion.Inverse(Quaternion.LookRotation(forward));
+        hip.Inverse = Quaternion.Inverse(Quaternion.LookRotation(forward * -1));
         hip.InverseRotation = hip.Inverse * hip.InitRotation;
 
         // For Head Rotation
@@ -281,7 +281,7 @@ public class VNectModel : MonoBehaviour
         var gaze = jointPoints[PositionIndex.Nose.Int()].Transform.position - jointPoints[PositionIndex.head.Int()].Transform.position;
         head.Inverse = Quaternion.Inverse(Quaternion.LookRotation(gaze));
         head.InverseRotation = head.Inverse * head.InitRotation;
-        
+
         var lHand = jointPoints[PositionIndex.lHand.Int()];
         var lf = TriangleNormal(lHand.Pos3D, jointPoints[PositionIndex.lMid1.Int()].Pos3D, jointPoints[PositionIndex.lThumb2.Int()].Pos3D);
         lHand.InitRotation = lHand.Transform.rotation;
@@ -362,7 +362,7 @@ public class VNectModel : MonoBehaviour
 
         var rHand = jointPoints[PositionIndex.rHand.Int()];
         var rf = TriangleNormal(rHand.Pos3D, jointPoints[PositionIndex.rThumb2.Int()].Pos3D, jointPoints[PositionIndex.rMid1.Int()].Pos3D);
-        //rHand.Transform.rotation = Quaternion.LookRotation(jointPoints[PositionIndex.rThumb2.Int()].Pos3D - jointPoints[PositionIndex.rMid1.Int()].Pos3D, rf) * rHand.InverseRotation;
+        rHand.Transform.rotation = Quaternion.LookRotation(jointPoints[PositionIndex.rThumb2.Int()].Pos3D - jointPoints[PositionIndex.rMid1.Int()].Pos3D, rf) * rHand.InverseRotation;
         rHand.Transform.rotation = Quaternion.LookRotation(jointPoints[PositionIndex.rThumb2.Int()].Pos3D - jointPoints[PositionIndex.rMid1.Int()].Pos3D, rf) * rHand.InverseRotation;
 
         foreach (var sk in Skeletons)
@@ -388,7 +388,7 @@ public class VNectModel : MonoBehaviour
 
     private Quaternion GetInverse(JointPoint p1, JointPoint p2, Vector3 forward)
     {
-        return Quaternion.Inverse(Quaternion.LookRotation(p1.Transform.position - p2.Transform.position, forward));
+        return Quaternion.Inverse(Quaternion.LookRotation(p1.Transform.position - p2.Transform.position, forward * -1));
     }
 
     /// <summary>
