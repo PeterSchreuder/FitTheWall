@@ -7,9 +7,31 @@ public class JointPoint : MonoBehaviour
     [SerializeField]
     private PointType pointType;
 
+    private Color color;
+
+    public Color PointColor
+    {
+        set
+        {
+            color = value;
+            spriteRenderer.color = value;
+        }
+    }
+
     private Vector2 position;
     private float xPosition;
     private float yPosition;
+
+    private SpriteRenderer spriteRenderer;
+
+    private void Start()
+    {
+        // Get the spriteRenderer from the sprite child
+        spriteRenderer = transform.GetComponentInChildren<SpriteRenderer>();
+
+        // Set it as Red as default
+        //PointColor = Color.red;
+    }
 
     /// <summary>
     /// Type
@@ -29,7 +51,8 @@ public class JointPoint : MonoBehaviour
 
     public Vector2 Position
     {
-        get { 
+        get
+        { 
             Vector3 _position3 = gameObject.transform.position;
             Vector2 _position2;
 

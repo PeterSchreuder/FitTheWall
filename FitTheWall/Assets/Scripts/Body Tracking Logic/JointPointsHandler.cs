@@ -13,6 +13,11 @@ public class JointPointsHandler : MonoBehaviour
         get { return jointPoints; }
     }
 
+    public int JointPointsAmount
+    {
+        get { return jointPoints.Count; }
+    }
+
     public void Start() {
 
         GetAllPoints();
@@ -39,8 +44,10 @@ public class JointPointsHandler : MonoBehaviour
     {
         JointPoint _jointPoint = null;
 
+        //print("-----");
         foreach(JointPoint _point in jointPoints)
         {
+            //print(_point.PointType == _type);
             if (_point.PointType == _type)
             {
                 _jointPoint = _point;
