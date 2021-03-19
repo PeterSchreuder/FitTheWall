@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9951fcdff5fea242927fd2c02a6cf2d, type: 3}
-  m_Name: PresenterDamage
+  m_Name: Presenter Damage
   m_EditorClassIdentifier: 
-  animationClip: {fileID: 0}
-  gameEvent: 0
+  animationClip: {fileID: 7400000, guid: c17de5b4c5434924b9dd1a264a751192, type: 2}
+  gameEvent: 3

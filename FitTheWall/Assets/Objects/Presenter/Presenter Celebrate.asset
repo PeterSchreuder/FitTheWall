@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9951fcdff5fea242927fd2c02a6cf2d, type: 3}
   m_Name: Presenter Celebrate
   m_EditorClassIdentifier: 
-  animationClip: {fileID: 0}
-  gameEvent: 0
+  animationClip: {fileID: 7400000, guid: ba0c905144e8fbd478ff356e2abef578, type: 2}
+  gameEvent: 4
